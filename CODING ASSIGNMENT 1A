@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+   class lp {
+   public static void main(String[] args) {
+   
+      Scanner lok = new Scanner(System.in);
+      
+      System.out.print("Enter the yearly interest rate:");
+      double interest = lok.nextDouble();
+      System.out.print("Enter the yearly of years as an integer: ");
+      int year = lok.nextInt();
+      System.out.print("Enter the loan amount : ");
+      double loan = lok.nextDouble();
+      
+      double total = loan*interest/100*year+loan;
+      double monthly = total/(12*year);
+      
+      System.out.println("The monthly payment is $" + monthly );
+      System.out.println("The total payment is  $" + total );
+ 
+            
+      
+      }
+      } 
+
+
