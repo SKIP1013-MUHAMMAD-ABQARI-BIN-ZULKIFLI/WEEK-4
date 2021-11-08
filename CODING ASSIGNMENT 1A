@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+   class lok {
+   public static void main(String[] args) {
+   
+      Scanner pkp = new Scanner(System.in);
+      
+      System.out.print("Enter the number of items: ");
+      int numb = pkp.nextInt();
+      System.out.print("Enter the price of the first item:   RM");
+      double first = pkp.nextDouble();
+      System.out.print("Enter quantity of first item: ");
+      int nfirst = pkp.nextInt();
+      
+      System.out.print("\nEnter the price of second item:  RM");
+      double sec = pkp.nextDouble();
+      System.out.print("Enter the quantity of second item:  ");
+      int nsec = pkp.nextInt(); 
+      
+      System.out.print("\nEnter the price of third item:  RM");
+      double third = pkp.nextDouble();
+      System.out.print("Enter the quantity of second item: ");
+      int nthird = pkp.nextInt(); 
+      
+      double discount = 0;
+      double total = first*nfirst+sec*nsec+third*nthird;
+      System.out.println("\nTotal price         : RM "+ total);
+      if (total>100) {
+      discount = total*0.2; }
+      else {
+      discount = total*0.1; }
+      System.out.println("Discount received   : RM "+ discount);
+      double price = total-discount;
+      System.out.println("Price to be paid    : RM "+ price);
+      
+      
+      
+      
+      
+      
+      
+      }
+      }
